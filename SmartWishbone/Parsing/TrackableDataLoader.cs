@@ -25,7 +25,7 @@ namespace SmartWishbone
 
         internal static Dictionary<string, Trackable> LoadTrackableData()
         {
-            var dataList = LoadDataFiles(dataFileInfix);
+            var dataList = LoadDataFiles();
 
             var dataDict = ValidateData(dataList);
 
@@ -36,7 +36,7 @@ namespace SmartWishbone
 
         internal static void SaveTrackableData(Dictionary<string, Trackable> data)
         {
-            var dataFilesFound = Directory.GetFiles(Path.GetDirectoryName(Paths.PluginPath), $"{dataFileInfix}*.yaml", SearchOption.AllDirectories).ToList();
+            var dataFilesFound = Directory.GetFiles(Path.GetDirectoryName(Paths.PluginPath), $"{dataFileInfix}.yaml", SearchOption.AllDirectories).ToList();
 
             if (dataFilesFound.Count > 0)
             {
@@ -67,9 +67,9 @@ namespace SmartWishbone
             }
         }
 
-        internal static List<Trackable> LoadDataFiles(string infix)
+        internal static List<Trackable> LoadDataFiles()
         {
-            var dataFilesFound = Directory.GetFiles(Path.GetDirectoryName(Paths.PluginPath), $"{infix}*.yaml", SearchOption.AllDirectories).ToList();
+            var dataFilesFound = Directory.GetFiles(Path.GetDirectoryName(Paths.PluginPath), $"{dataFileInfix}.yaml", SearchOption.AllDirectories).ToList();
 
             var trackables = new List<Trackable>();
 
@@ -98,8 +98,8 @@ namespace SmartWishbone
 
             if (trackables == null || trackables.Count == 0)
             {
-                Helper.Log(string.Format(loadingLog, embedded, infix));
-                var temp = LoadEmbeddedDataFile(infix);
+                Helper.Log(string.Format(loadingLog, embedded, dataFileInfix));
+                var temp = LoadEmbeddedDataFile(dataFileInfix);
 
                 if (temp != null && temp.Count > 0)
                 {
@@ -107,7 +107,7 @@ namespace SmartWishbone
                 }
                 else
                 {
-                    Helper.LogWarning(string.Format(failedLoadLog, embedded, infix));
+                    Helper.LogWarning(string.Format(failedLoadLog, embedded, dataFileInfix));
                 }
             }
 
