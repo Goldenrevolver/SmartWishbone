@@ -1,0 +1,5 @@
+﻿# this is the base game silver vein (prefab name 'silvervein')
+- { prefabName: "Becon", displayItem: "SilverOre", condition: "defeated_bonemass" }
+- { prefabName: "TreasureChest_meadows_buried", displayItem: "$piece_chestwood" }
+# this is for all the muddy scrap piles
+- { prefabName: "mudpile_beacon", displayItem: "IronScrap", condition: "defeated_gdking" }

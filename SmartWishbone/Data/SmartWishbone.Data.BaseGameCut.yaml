@@ -1,0 +1,8 @@
+﻿- { prefabName: "rock3_silver", displayItem: "SilverOre", condition: "defeated_bonemass", range: 40.0 }
+- { prefabName: "MineRock_Copper", displayItem: "CopperOre", condition: "defeated_eikthyr" }
+- { prefabName: "MineRock_Iron", displayItem: "IronScrap", condition: "defeated_gdking" }
+- { prefabName: "MineRock_Meteorite", displayItem: "FlametalOre", condition: "defeated_queen" }
+- { prefabName: "Pickable_Tin", displayItem: "TinOre", condition: "defeated_eikthyr" }
+- { prefabName: "Pickable_BogIronOre", displayItem: "IronScrap", condition: "defeated_gdking" }
+- { prefabName: "Pickable_Obsidian", displayItem: "Obsidian", condition: "defeated_bonemass" }
+- { prefabName: "Pickable_Meteorite", displayItem: "FlametalOre", condition: "defeated_queen" }

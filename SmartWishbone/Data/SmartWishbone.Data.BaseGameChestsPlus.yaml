@@ -1,0 +1,6 @@
+﻿- { prefabName: "TreasureChest_heath", displayItem: "$piece_chestwood" }
+- { prefabName: "TreasureChest_meadows", displayItem: "$piece_chestwood" }
+- { prefabName: "TreasureChest_blackforest", displayItem: "$piece_chestwood", condition: "defeated_eikthyr" }
+- { prefabName: "TreasureChest_swamp", displayItem: "$piece_chestwood", condition: "defeated_gdking" }
+- { prefabName: "TreasureChest_mountains", displayItem: "$piece_chestwood", condition: "defeated_bonemass" }
+- { prefabName: "TreasureChest_plains_stone", displayItem: "$piece_chestwood", condition: "defeated_dragon" }

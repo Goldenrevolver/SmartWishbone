@@ -1,0 +1,8 @@
+﻿- { prefabName: "rock4_copper", displayItem: "CopperOre", condition: "defeated_eikthyr", range: 40.0 }
+- { prefabName: "MineRock_Tin", displayItem: "TinOre", condition: "defeated_eikthyr" }
+- { prefabName: "MineRock_Obsidian", displayItem: "Obsidian", condition: "defeated_bonemass" }
+# the pipe symbol means that they are a part of both the IronScrap and CopperOre group (don't leave spaces before or after the pipe)
+- { prefabName: "giant_helmet1", displayItem: "IronScrap|CopperOre", condition: "defeated_goblinking" }
+- { prefabName: "giant_helmet2", displayItem: "IronScrap|CopperOre", condition: "defeated_goblinking" }
+- { prefabName: "giant_sword1", displayItem: "IronScrap|CopperOre", condition: "defeated_goblinking" }
+- { prefabName: "giant_sword2", displayItem: "IronScrap|CopperOre", condition: "defeated_goblinking" }
