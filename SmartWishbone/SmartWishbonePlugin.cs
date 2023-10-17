@@ -9,7 +9,7 @@ namespace SmartWishbone
     {
         public const string GUID = "goldenrevolver.SmartWishbone";
         public const string NAME = "Smart Wishbone";
-        public const string VERSION = "1.0.0";
+        public const string VERSION = "1.0.2";
 
         protected void Awake()
         {
